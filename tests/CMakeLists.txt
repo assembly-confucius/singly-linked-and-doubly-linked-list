@@ -1,0 +1,40 @@
+add_executable(test_PushTests_Singly singly_linked_list/PushTests.cpp)
+target_link_libraries(test_PushTests_Singly OneList gtest gtest_main)
+add_test(NAME PushTests_Singly COMMAND test_PushTests_Singly)
+
+add_executable(test_PopTests_Singly singly_linked_list/PopTests.cpp)
+target_link_libraries(test_PopTests_Singly OneList gtest gtest_main)
+add_test(NAME PopTests_Singly COMMAND test_PopTests_Singly)
+
+add_executable(test_AccessTests_Singly singly_linked_list/AccessTests.cpp)
+target_link_libraries(test_AccessTests_Singly OneList gtest gtest_main)
+add_test(NAME AccessTests_Singly COMMAND test_AccessTests_Singly)
+
+add_executable(test_InsertRemoveTests_Singly singly_linked_list/InsertRemoveTests.cpp)
+target_link_libraries(test_InsertRemoveTests_Singly OneList gtest gtest_main)
+add_test(NAME InsertRemoveTests_Singly COMMAND test_InsertRemoveTests_Singly)
+
+add_executable(test_IteratorTests_Singly singly_linked_list/IteratorTests.cpp)
+target_link_libraries(test_IteratorTests_Singly OneList gtest gtest_main)
+add_test(NAME IteratorTests_Singly COMMAND test_IteratorTests_Singly)
+
+
+add_executable(test_PushTests_Doubly doubly_linked_list/PushTests.cpp)
+target_link_libraries(test_PushTests_Doubly DoublyList gtest gtest_main)
+add_test(NAME PushTests_Doubly COMMAND test_PushTests_Doubly)
+
+add_executable(test_PopTests_Doubly doubly_linked_list/PopTests.cpp)
+target_link_libraries(test_PopTests_Doubly DoublyList gtest gtest_main)
+add_test(NAME PopTests_Doubly COMMAND test_PopTests_Doubly)
+
+add_executable(test_AccessTests_Doubly doubly_linked_list/AccessTests.cpp)
+target_link_libraries(test_AccessTests_Doubly DoublyList gtest gtest_main)
+add_test(NAME AccessTests_Doubly COMMAND test_AccessTests_Doubly)
+
+add_executable(test_InsertRemoveTests_Doubly doubly_linked_list/InsertRemoveTests.cpp)
+target_link_libraries(test_InsertRemoveTests_Doubly DoublyList gtest gtest_main)
+add_test(NAME InsertRemoveTests_Doubly COMMAND test_InsertRemoveTests_Doubly)
+
+add_executable(test_IteratorTests_Doubly doubly_linked_list/IteratorTests.cpp)
+target_link_libraries(test_IteratorTests_Doubly DoublyList gtest gtest_main)
+add_test(NAME IteratorTests_Doubly COMMAND test_IteratorTests_Doubly)
